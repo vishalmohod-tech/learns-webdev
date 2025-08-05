@@ -19,7 +19,7 @@ This repository documents my daily learning journey as part of my "100 Days of C
 
 - 🧑‍💼 [LinkedIn](https://linkedin.com/in/YOUR_LINK)  
 - 💻 [Portfolio (Coming Soon)]()  
-- 🗂 [GitHub Profile](https://github.com/YOUR_USERNAME)
+- 🗂 [GitHub Profile] https://github.com/VishalMohod 
 
 ---
 
