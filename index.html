@@ -3,125 +3,191 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Learning</title>
+  <title>Vishal's Learning Journal</title>
   <style>
     body {
-      font-family: 'Arial', 'sans-serif', 'Algerian';
-      background: #bb78a7;
       margin: 0;
-      padding: 0;
-      color: #333;
+      font-family: 'Segoe UI', sans-serif;
+      background: #b4dcdd;
+      display: flex;
     }
-
-    header {
-      background-color: #4a90e2;
+    /* Sidebar */
+    aside {
+       width: 250px;
+      background: #1f2937;
       color: white;
-      padding: 30px 0;
-      text-align: center;
+      padding: 20px;
+      min-height: 100vh;
+    }
+    aside h2 {
+      margin-top: 0;
+      font-size: 1.5em;
+    }
+    aside p {
+      font-size: 0.9em;
+      color: #cbd5e1;
     }
 
+    /* Main Content */
+    main {
+      flex: 1;
+      padding: 20px;
+    }
+    header {
+     background-color: #a4acbb;
+      padding: 15px 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0px;
+      z-index: 2;
+    }
     header h1 {
       margin: 0;
-      font-size: 2rem;
+      font-size: 1.8em;
+      color: #1f2937;
     }
 
-    main {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    li {
-      background: #f9f9f9;
-      margin-bottom: 15px;
+    /* Cards */
+    .post {
+      background: white;
       padding: 15px;
-      border-left: 5px solid #4a90e2;
-      border-radius: 5px;
-      transition: 0.3s ease;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease;
     }
-
-    li:hover {
-      background: #eaf4ff;
+    .post:hover {
+      transform: translateY(-3px);
     }
-
-    a {
-      color: #4a90e2;
-      text-decoration: none;
-      font-weight: bold;
+    .post h2 {
+      margin-top: 0;
+      color: #2563eb;
+      font-size: 1.3em;
     }
-
-    a:hover {
-      text-decoration: underline;
-      color:yellow;
+    .date {
+      font-size: 0.85em;
+      color: #6b7280;
+      margin-bottom: 10px;
     }
-
     footer {
       text-align: center;
-      padding: 20px;
-      color: #777;
-      font-size: 0.9rem;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.5rem;
-      }
-      main {
-        margin: 20px;
-      }
+      padding: 15px;
+      font-size: 0.85em;
+      color: #6b7280;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>🚀 Let's Learn Web Developmenmt With Vishal-tech</h1>
-  </header>
-
-  <main>
+  <!-- Sidebar -->
+  
+  <!-- Main content -->
+  <aside>
+    <h2>Vishal's Journal</h2>
     <p>Welcome! I'm Vishal, learning to become a full stack developer from scratch. This page will track my daily progress and projects.</p>
+    <p>Sharing my daily progress as I learn full stack development.</p>
+  </aside>
+  <main>
+    <header>
+      <h1>🚀 Let's Learn Web Developmenmt With Vishal-tech</h1>
+      <p><i>Tracking my journey to becoming a Full Stack Developer.💻</i></p>
+    </header>
 
-    <ul>
-      <!--day1 learning-->
-      <li>
-        <strong>Day 1:</strong> Created GitHub Repository & Learned HTML — 
-        <a href="Day1 Learning/index.html" target="_blank">View Code</a>
-      </li>
-      <!--day1 learning-->
-      <li>
-        <strong>Day 2:</strong> Created GitHub Repository & Learned HTML — 
-        <a href="Day2 Learning/index.html" target="_blank">View Code</a>
-      </li>
-      <!--day1 learning-->
-      <li>
-        <strong>Day 3:</strong> Created GitHub Repository & Learned HTML — 
-        <a href="Day3 Learning/index.html" target="_blank">View Code</a>
-      </li>
-      <!--day4 learning-->
-      <li>
-        <strong>Day 4:</strong> Created GitHub Repository & Learned HTML — 
-        <a href="Day 4 Learning/index.html" target="_blank">View Code</a>
-      </li>
-    </ul>
+    <div class="post">
+      <a style="text-decoration: none;" href="Day1 Learning/index.html"> <h2>📚 Day 1: Learning HTML Structure and tags</h2> </a>
+      
+      
+      <p>Today I Learned about HTML structure, headings, paragraphs, and links. Created my first basic webpage.</p>
+    </div>
+    <!-- <div class="post">
+      <h2>Learning HTML Structure</h2>
+      <div class="date">August 13, 2025</div>
+      <p>Today I Learned about HTML structure, headings, paragraphs, and links. Created my first basic webpage.</p>
+    </div>
+    <div class="post">
+      <h2>Learning HTML Structure</h2>
+      <div class="date">August 13, 2025</div>
+      <p>Today I Learned about HTML structure, headings, paragraphs, and links. Created my first basic webpage.</p>
+    </div>
+    <div class="post">
+      <h2>Learning HTML Structure</h2>
+      <div class="date">August 13, 2025</div>
+      <p>Today I Learned about HTML structure, headings, paragraphs, and links. Created my first basic webpage.</p>
+    </div>
+    <div class="post">
+      <h2>Learning HTML Structure</h2>
+      <div class="date">August 13, 2025</div>
+      <p>Today I Learned about HTML structure, headings, paragraphs, and links. Created my first basic webpage.</p>
+    </div>
+    <div class="post">
+      <h2>Learning HTML Structure</h2>
+      <div class="date">August 13, 2025</div>
+      <p>Today I Learned about HTML structure, headings, paragraphs, and links. Created my first basic webpage.</p>
+    </div>
+    <div class="post">
+      <h2>Learning HTML Structure</h2>
+      <div class="date">August 13, 2025</div>
+      <p>Today I Learned about HTML structure, headings, paragraphs, and links. Created my first basic webpage.</p>
+    </div>
+    <div class="post">
+      <h2>Learning HTML Structure</h2>
+      <div class="date">August 13, 2025</div>
+      <p>Today I Learned about HTML structure, headings, paragraphs, and links. Created my first basic webpage.</p>
+    </div>
+    <div class="post">
+      <h2>Learning HTML Structure</h2>
+      <div class="date">August 13, 2025</div>
+      <p>Today I Learned about HTML structure, headings, paragraphs, and links. Created my first basic webpage.</p>
+    </div>
+    <div class="post">
+      <h2>Learning HTML Structure</h2>
+      <div class="date">August 13, 2025</div>
+      <p>Today I Learned about HTML structure, headings, paragraphs, and links. Created my first basic webpage.</p>
+    </div>
+    <div class="post">
+      <h2>Learning HTML Structure</h2>
+      <div class="date">August 13, 2025</div>
+      <p>Today I Learned about HTML structure, headings, paragraphs, and links. Created my first basic webpage.</p>
+    </div>
+    <div class="post">
+      <h2>Learning HTML Structure</h2>
+      <div class="date">August 13, 2025</div>
+      <p>Today I Learned about HTML structure, headings, paragraphs, and links. Created my first basic webpage.</p>
+    </div>
+    <div class="post">
+      <h2>Learning HTML Structure</h2>
+      <div class="date">August 13, 2025</div>
+      <p>Today I Learned about HTML structure, headings, paragraphs, and links. Created my first basic webpage.</p>
+    </div>
+    <div class="post">
+      <h2>Learning HTML Structure</h2>
+      <div class="date">August 13, 2025</div>
+      <p>Today I Learned about HTML structure, headings, paragraphs, and links. Created my first basic webpage.</p>
+    </div>
+    <div class="post">
+      <h2>Learning HTML Structure</h2>
+      <div class="date">August 13, 2025</div>
+      <p>Today I Learned about HTML structure, headings, paragraphs, and links. Created my first basic webpage.</p>
+    </div>
+    <div class="post">
+      <h2>Learning HTML Structure</h2>
+      <div class="date">August 13, 2025</div>
+      <p>Today I Learned about HTML structure, headings, paragraphs, and links. Created my first basic webpage.</p>
+    </div> -->
+<!-- 
+    <div class="post">
+      <h2>CSS Flexbox Basics</h2>
+      <div class="date">August 14, 2025</div>
+      <p>Discovered how Flexbox helps align items easily. Practiced making responsive layouts.</p>
+    </div> -->
+
+    <footer>
+      Keep showing up. One day at a time. 💪 - Vishal-tech<br>
+      
+    </footer>
   </main>
-
-  <footer>
-    <p>Keep showing up. One day at a time. 💪 - Vishal-tech</p>
-  </footer>
 
 </body>
 </html>
-
-
-
-
-
-
