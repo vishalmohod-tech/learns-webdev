@@ -1,7 +1,7 @@
 # 🚀 Learns Web Development
 
 Hi, I'm Vishal — a final-year MCA student from Nagpur on a mission to become a Full Stack Web Developer.  
-This repository documents my daily learning journey as part of my "100 Days of Code" and #LearnInPublic challenge.
+This repository documents my daily learning journey and #LearnInPublic challenge.
 
 ---
 
@@ -17,11 +17,10 @@ This repository documents my daily learning journey as part of my "100 Days of C
 
 ## 🔗 Let's Connect
 
-- 🧑‍💼 [LinkedIn](https://linkedin.com/in/YOUR_LINK)  
+- 🧑‍💼 [LinkedIn](https://linkedin.com/in/vishalmohod-tech)  
 - 💻 [Portfolio (Coming Soon)]()  
-- 🗂 [GitHub Profile] https://github.com/VishalMohod 
+- 🗂 [GitHub Profile] https://github.com/vishalmohod-tech
 
 ---
 
 > “Start where you are. Use what you have. Do what you can.”  
-> — Arthur Ashe
