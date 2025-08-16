@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+   <style>
+    input{
+       
+        margin: 4px;
+    }
+   </style>
+</head>
+<body>
+    <h1>Form in Html</h1>
+   
+    <form action="none">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" name="username"> <br>
+        <label for="fname">Father Name:</label>
+        <input type="text" id="fname" placeholder="Enter your Father name" name="username"> <br>
+        <label for="mname">Mother Name:</label>
+        <input type="text" id="mname" placeholder="Enter Mother your name" name="username"> <br>
+        
+        <label for="dob">D.O.B.</label>
+        <input type="date" name="dob" id="dob"> <br>
+        Gender: 
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender">
+        <label for="female">Female</label> <br>
+        <label for="adhar">Adhar Number: </label>
+        <input type="text" id="adhar" name="adhar"> <br>
+        <label for="phone">Contact no.</label>
+        <input type="text" id="phone" placeholder="Enter your contact number" required> 
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter you mail" name="email"> <br>                      
+       <label for="city">City:</label>
+       <input type="text" id="city" name="city" >    
+       <label for="pincode">Pincode:</label>
+       <input type="text" id="pincode" name="pincode" >   <br> 
+       <label for="state">State:</label>
+       <input type="text" id="state" name="state" >    
+       <br>    
+       <label for="person">Person with disabiility:</label>
+       <input type="radio" id="person" name="person"> Yes
+       <input type="radio" id="person" name="person">  No <br>
+       
+       <label for="comment">Comment:</label> <br>
+       <textarea name="comment" id="comment" rows="5" cols="60" placeholder="Enter your Coment here"></textarea>
+        <br><input type="submit" name="submit">
+        <input type="reset" name="reset">
+    </form>
+</body>
+</html>
