@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 10 - CSS Box Model</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      text-align: center;
+      padding: 40px;
+    }
+
+    .box {
+      background-color: #e3f2fd;  /* content area */
+      width: 250px;
+      margin: 40px auto;          /* outer spacing */
+      padding: 20px;              /* inner spacing */
+      border: 5px solid #2196F3;  /* border */
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      color: #0d47a1;
+    }
+
+    p {
+      color: #333;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    .note {
+      margin-top: 30px;
+      color: #555;
+      font-size: 14px;
+    }
+    .boxmodel{
+        border: 2px solid black;
+        width: 250px;
+        height: 150px;
+        margin: 40px auto;  
+    }
+    .margin{
+        background-color: rgb(90, 184, 118);
+         width: 250px;
+        height: 150px;
+    }
+    .border{
+         width: 220px;
+        height: 115px;
+        margin: auto;
+        background-color: rgb(179, 19, 19);
+        color: white;
+    }
+    .padding{
+        background-color: rgb(3, 182, 182);
+        color: #000000;
+        width: 180px;
+        height: 80px;
+        margin: auto;
+    }
+    .content{
+        background-color: #cbb0d1;
+        width: 150px;
+        height: 45px;
+        margin: auto;
+        color: #861069;
+        font-size: 20px;
+        line-height: 40px;
+        
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>Box Model Demo</h2>
+    <p>This box shows how <b>Content</b>, <b>Padding</b>, <b>Border</b>, and <b>Margin</b> work together in CSS.</p>
+  </div>
+
+  <div class="boxmodel">
+    <div class="margin"> Margin
+        <div class="border"> Border
+            <div class="padding"> Padding
+                <div class="content"> Content Code</div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <p class="note">🔹 Content = Text/Images  
+  🔹 Padding = Space inside the box  
+  🔹 Border = Outline around the box  
+  🔹 Margin = Space outside the box</p>
+
+</body>
+</html>
