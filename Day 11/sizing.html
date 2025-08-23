@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing Unita</title>
+    <style>
+        * {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            border: 2px solid green;
+        }
+
+        .pixel {
+            width: 250px;
+            /* px = fixed size */
+            height: 150px;
+            background: #cce5ff;
+        }
+
+        .percent {
+            width: 20%;
+            /* relative to parent */
+            height: 20%;
+            background: #d4edda;
+        }
+
+        .viewport {
+            width: 50vw;
+            /* relative to viewport width */
+            height: 20vh;
+            /* relative to viewport height */
+            background: #e2e3e5;
+        }
+
+        .em-unit {
+            font-size: 20px;
+            width: 15em;
+            /* relative to font-size */
+            height: 10em;
+            background: #fff3cd;
+        }
+
+        .rem-unit {
+            width: 20rem;
+            /* relative to root font-size */
+            height: 6rem;
+            background: #f8d7da;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="pixel"> <b>Absolute Unit (px)</b>
+            <p>
+                Fixed width:250px and height:150px
+            </p>
+        </div>
+        <div class="percent"> <b>Relative (%)</b>
+            <p>
+            percentage of its parent width:20% and height:20%
+            </p>
+        </div>
+        <div class="viewport"> <b> Viewport unit (vw/vh)</b>
+            <p>
+                50vw wide, 20vh height → resizes with window.
+            </p>
+        </div>
+        <div class="em-unit">
+            <p><b>em Units</b></p>
+            <p>Width = 15em (depends on font-size of its parent).</p>
+        </div>
+        <div class="rem-unit">
+            <p><b>rem Units</b></p>
+            <p>Width = 20rem (relative to root font-size).</p>
+        </div>
+    </div>
+</body>
+
+</html>
