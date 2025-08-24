@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dimensions & Overflow</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #cdd7da;
+    }
+
+    h2 {
+      margin-top: 40px;
+      color: #333;
+    }
+
+    .box {
+      width: 250px;
+      height: 120px;
+      border: 2px solid #333;
+      padding: 10px;
+      margin: 20px 0;
+      background: #fff;
+    }
+
+    .visible {
+      overflow: visible;
+    }
+
+    .hidden {
+      overflow: hidden;
+    }
+
+    .scroll {
+      overflow: scroll;
+    }
+
+    .auto {
+      overflow: auto;
+    }
+    
+    /* min/max example */
+    .responsive-box {
+      min-width: 150px;
+      max-width: 400px;
+      height: 80px;
+      background: lightblue;
+      padding: 10px;
+      border: 2px dashed navy;
+    }
+
+  </style>
+</head>
+<body>
+  <h1> CSS Dimensions & Overflow</h1>
+
+  <h2>Overflow: visible (default)</h2>
+  <div class="box visible">
+    This is some extra text that goes beyond the box boundaries. You can see it spilling out without restriction.
+  </div>
+
+  <h2>Overflow: hidden</h2>
+  <div class="box hidden">
+    This is some extra text that will be clipped if it goes beyond the box size.
+  </div>
+
+  <h2>Overflow: scroll</h2>
+  <div class="box scroll">
+    This is some extra text that will always have scrollbars, even if the text fits. It shows scroll bars always
+  </div>
+
+  <h2>Overflow: auto</h2>
+  <div class="box auto">
+    This is some extra text that will only show scrollbars when necessary. Resize the box or text to test. Shows scroll only it needed
+  </div>
+
+  <h2>Min/Max Width Example</h2>
+  <div class="responsive-box">
+    Resize the browser window to see me grow and shrink! I respect min-width (150px) and max-width (400px).
+  </div>
+
+</body>
+</html>
