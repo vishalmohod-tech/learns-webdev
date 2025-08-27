@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shadows</title>
+  <style>
+   
+    .box1{
+     
+      background-color: aquamarine;
+      display: inline-block;
+      text-align: center;
+      margin: 20px;
+      padding: 100px;
+     
+    }
+    .box2{
+        background-color: rgb(224, 176, 87);
+        box-shadow: 10px 10px 5px 5px;
+    }
+    .box3{
+      background-color: rgb(5, 179, 179);
+      box-shadow: 20px 10px 10px 5px red;
+      border-radius: 20px;
+    }
+    .txt{
+      background-color: antiquewhite;
+      font-size: 50px;
+      text-shadow: 5px 5px 2px green;
+      
+    }
+  </style>
+</head>
+<body>
+  <h1>Shadows in CSS</h1>
+  <div class="box1"> This is the normal box </div>
+  <div class="box1 box2">Box with default shadow</div>
+  <div class="box1 box3">Box with color shadow and border radius </div>
+  <div class="box1 txt">Text with shadow</div>  
+</body>
+</html>
+
