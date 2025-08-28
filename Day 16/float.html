@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Float & Clear Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    h2{
+        background-color: aliceblue;
+        text-shadow: 2px 2px 2px red;
+    }
+
+    .float-left {
+      float: left;
+      margin: 10px;
+      width: 150px;
+    }
+
+    .float-right {
+      float: right;
+      margin: 10px;
+      width: 150px;
+    }
+
+    .box {
+      background: #f4f4f4;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    .clear-both {
+      clear: both;
+      background: #ddd;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>CSS Float & Clear Example</h2>
+
+  <img src="https://via.placeholder.com/150" alt="Left Float" class="float-left">
+  <p>
+    This image is floated to the left. Text naturally wraps around it, creating a newspaper-style layout. Float is often used for images, sidebars, or even navigation menus in old layouts.
+  </p>
+
+  <img src="https://via.placeholder.com/150" alt="Right Float" class="float-right">
+  <p>
+    This image is floated to the right. Notice how the text flows around it from the left side. Floats give flexibility, but if not cleared, they can break the layout of elements below.
+  </p>
+
+  <div class="clear-both">I used clear: both to stop overlapping with floated elements above.</div>
+
+  <div class="box">
+    This is a normal box placed after clear. Without `clear: both`, it would overlap with the floated images.
+  </div>
+</body>
+</html>
