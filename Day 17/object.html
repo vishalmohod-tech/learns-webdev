@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object fit and position</title>
+  <style>
+    
+    .box{
+      display: inline-block;
+      width: 400px;
+      height: 300px;
+      border: 2px solid black;
+      background-color: rgb(22, 48, 54);
+    
+    }
+    h2{
+      text-align: center;
+    }
+     .cover{
+      width: 400px;
+      height: 300px;
+      object-fit: cover;
+    }
+    .contain {
+      width: 400px;
+      height: 300px;
+      object-fit: contain;
+    }
+    .fill
+    {
+      width: 400px;
+      height: 300px;
+      object-fit: fill;
+    }
+    .positionleft{
+      width: 400px;
+      height: 300px;
+      object-fit: cover;
+      object-position:left;
+    }
+    .positionright{
+      width: 400px;
+      height: 300px;
+      object-fit: cover;
+      object-position:right;
+    }
+    .positiontop{
+      width: 400px;
+      height: 300px;
+      object-fit: cover;
+      object-position:top left;
+    }
+    b{
+      font-size: 30px;
+      color: rgb(30, 55, 56);
+    }
+  </style>
+</head>
+<body>
+<div class="original">
+  <h2>
+    This is Original Image
+  </h2> 
+  <img src="cssimg.jpg" alt="original">
+</div>  
+<h2>
+  Object fit Properties
+</h2>
+
+  <div class="container">
+    <div class="box">  <img class="cover" src="cssimg.jpg" alt="cover"> <b> cover</b> property used the given width and height and fit that image in it, to cover that part remaining part of that image will be cut.</div>
+    <div class="box"> <img  class="contain" src="cssimg.jpg" alt="contain"><b>contain</b> property used the given width and height , show the full image , without cutting the image and remaining width and height get remains blank.</div>
+    <div class="box"><img  class="fill" src="cssimg.jpg" alt=""><b>fill</b> property used the full given width and height and show full image, The image is resized to fill the given dimension. If necessary, the image will be stretched or squished to fit</div>
+
+    <h2>Object position Property</h2>
+    <div class="box"><img src="cssimg.jpg" alt="position" class="positionleft"> <b>Position Left</b></div>
+    <div class="box"><img src="cssimg.jpg" alt="position" class="positionright"><b>Position Right</b> </div>
+    <div class="box"><img src="cssimg.jpg" alt="position" class="positiontop"> <b>Position top left</b></div>
+  </div>
+</body>
+</html>
