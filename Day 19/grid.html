@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Grid</title>
+    <style>
+        .container{
+            border: 2px solid black;
+          
+            height: 700px;
+            background-color: darksalmon;
+            display:grid;
+            grid-template-columns: 150px 150px;/*it is like 1st colum takes 200px andthrn 2nd 200px we can add more*/
+            grid-template-rows: 200px 150px;
+             gap: 10px;
+           
+        }
+        .box{
+            border: 2px solid red;
+            background-color: aquamarine;
+            height: 80px;
+           
+        }
+        .item1{
+            grid-column: 1/3;
+        }
+        .item2{
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Display Grid </h1>
+    <div class="container">
+        <div class="box">box 1</div>
+        <div class="box">box 2</div>
+        <div class="box item1">box 3 <br>grid-colum used</div>
+        <div class="box item2">box 4 (align content used)</div>
+        <div class="box">box 5</div>
+    </div>
+    
+</body>
+</html>
