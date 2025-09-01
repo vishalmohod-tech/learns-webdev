@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform and Transition</title>
+    <style>
+        .container{
+            background-color: rgb(52, 233, 203);
+            width: 300px;
+            height: 400px;
+            border: 2px solid black;
+            text-align: center;
+            margin: 20px;
+            
+        }
+        .box{
+            background-color: rgb(236, 130, 81);
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            margin: 20px;
+            display: inline-block;            
+        }
+        .rotate:hover{
+           transform: rotate(45deg);
+        }
+        .rotatex:hover{
+           transform: rotatex(45deg);
+        }
+        .rotatey:hover{
+           transform: rotatey(45deg);
+        }
+        .scale:hover{
+            transform: scale(2);
+        }
+        .scalex:hover{
+            transform: scalex(2);
+        }
+        .scaley:hover{
+            transform: scaley(2);
+        }
+        .skew:hover{
+            transform: skew(25deg);
+        }
+        .translate:hover{
+            transform: translate(50px);
+        }
+        .origin:hover{
+            transform: origin(20%);
+        }
+    </style>
+</head>
+<body>
+    <h1>Transform Properties </h1>
+    <div class="container">
+        <div class="box rotate">
+            Rotate
+        </div>
+        <div class="box rotatex">
+            Rotatex
+        </div>
+        <div class="box rotatey">
+            Rotatey
+        </div>
+        <div class="box scale">
+            scale
+        </div>
+        <div class="box scalex">
+            scalex
+        </div>
+        <div class="box scaley">
+            scaley
+        </div>
+        <div class="box skew">
+            skew
+        </div>
+        <div class="box translate">
+            translate
+        </div>
+       
+    </div>
+</body>
+</html>
