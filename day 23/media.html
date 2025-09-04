@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Queries</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: white;
+    }
+
+    header {
+      padding: 20px;
+      background-color: #4CAF50;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .card {
+      flex: 1 1 200px;
+      max-width: 300px;
+      background: #333;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    /* Tablet screens */
+    @media (max-width: 768px) {
+      body {
+        background-color: #0077b6;
+      }
+      header {
+        background-color: #023e8a;
+      }
+      .card {
+        background: #03045e;
+      }
+    }
+
+    /* Mobile screens */
+    @media (max-width: 480px) {
+      body {
+        background-color: #6a0572;
+      }
+      header {
+        background-color: #45014a;
+        font-size: 18px;
+      }
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Responsive Design with Media Queries</h1>
+    <p>Resize the screen to see the magic ✨</p>
+  </header>
+
+  <div class="container">
+    <div class="card">Card 1: Desktop → Tablet → Mobile</div>
+    <div class="card">Card 2: Layout adapts dynamically</div>
+    <div class="card">Card 3: Background colors change too!</div>
+  </div>
+</body>
+</html>
