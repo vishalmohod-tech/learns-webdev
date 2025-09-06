@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visual Effects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+      margin: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    h1 {
+      grid-column: 1 / -1;
+      text-align: center;
+      color: #333;
+    }
+
+    .card {
+      padding: 20px;
+      border-radius: 12px;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    /* Gradient Backgrounds */
+    .gradient {
+      background: linear-gradient(135deg, #667eea, #bd2eaa, rgb(38, 185, 38));
+    }
+
+    /* CSS Filters */
+    .filter img {
+      width: 100%;
+      border-radius: 12px;
+      transition: 0.3s ease;
+    }
+
+    .filter img:hover {
+      filter: grayscale(100%) blur(2px) brightness(0.8);
+    }
+
+    /* Clipping & Masking */
+    .clip {
+      background: url("https://picsum.photos/400") no-repeat center/cover;
+      -webkit-clip-path: circle(40% at center);
+      clip-path: circle(60% at center);
+      height: 250px;
+      border-radius: 12px;
+    }
+    p{
+        color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Modern CSS Visual Effects</h1>
+
+  <div class="card gradient">
+    🌈 Gradient Background  
+    <p>Linear & radial gradients create smooth transitions of colors.</p>
+  </div>
+
+  <div class="card filter">
+    <p>🎨 CSS Filters</p>
+    <img src="https://picsum.photos/400/250" alt="Demo Image">
+    <p>Hover to see grayscale, blur & brightness effects.</p>
+  </div>
+
+  <div class="card">
+    <p>✂️ Clipping / Masking</p>
+    <div class="clip"></div>
+    <p>Clip images into shapes for creative layouts.</p>
+  </div>
+</body>
+</html>
